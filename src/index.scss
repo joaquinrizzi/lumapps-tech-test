@@ -1,0 +1,41 @@
+@import '~@lumx/core/scss/lumx.scss';
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+* {
+  margin: 0;
+  font-family:"Quicksand";
+  color: #000000;
+
+}
+
+.navbar {
+  background-color: #1546c1;
+  padding:10px;
+  display: flex;
+  align-items: center;
+  max-width: auto;
+  margin: 0 auto;
+  border-radius: 5px;
+
+}
+
+.navbar h1 {
+
+  color:#1546c1;
+}
+
+.content {
+  max-width:  800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.flex-box-joaquin {
+
+  border-style:groove;
+  border-color: #1546c1;
+  margin: 10px;
+  border-radius: 8px;
+  width: auto;
+}
