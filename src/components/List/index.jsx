@@ -10,25 +10,12 @@ import {
   FlexBox,
   Chip
 } from "@lumx/react";
-import React, { useState, useEffect } from "react";
+import React from "react";
 
-const Listitems = ({ query, title }) => {
-  const [characters, setCharacters] = useState(null);
 
-  const url =
-    "https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=" +
-    query +
-    "&limit=4&apikey=8fb61ed0d8ae4cc76943c8d2b8e2ed9c";
+const Listitems = ({ characters, title }) => {
 
-  useEffect(() => {
-    fetch(url)
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        setCharacters(data.data.results);
-      });
-  }, []);
+  //console.log(characters);
 
   return (
     <>
